@@ -8,6 +8,7 @@ current_date=$(date "+%A, %B %d, %Y")
 current_time=$(date "+%I:%M %p")  
 current_timezone=$(date "+%Z") 
 
+# function
 open_target_folder() {
   cd "$TARGET_DIR" || {
     echo "❌ Failed to cd to $TARGET_DIR"
@@ -37,7 +38,7 @@ speak_thank_you() {
 }
 
 
-
+# Start here
 speak_hi
 
 echo "How does your heart feel today?"
